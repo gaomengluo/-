@@ -56,7 +56,8 @@ module.exports = {
   // 不同类型模块的处理规则
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),
+      // createLintingRule()
+      ...(config.dev.useEslint ? [] : []),
       { // 对所有.vue文件使用vue-loader进行编译
         test: /\.vue$/,
         loader: 'vue-loader',

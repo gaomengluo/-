@@ -31,7 +31,7 @@ export default {
   },
  data() {
     return {
-       navLinks: ['Home', '说说', '日志', '留言'].map(label => ({url: '#', label})),
+       navLinks: ['Home', '说说', '日志', '留言','图片'].map(label => ({url:'/img', label})),
        TimeLines:[{
          time:'1687',
          discovery:{
@@ -99,14 +99,10 @@ export default {
 </script>
 
 <style lang="less">
-html,
 body {
-  margin: 0;
+   margin: 0;
   height: 100%;
   padding: 0;
-}
-
-body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       background: linear-gradient(54deg, #9164ff, #8bfff4);
